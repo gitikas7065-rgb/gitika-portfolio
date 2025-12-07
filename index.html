@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gitika — Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Irish+Grover&family=Pacifico&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- organic shapes (pure decorative) -->
+    <div class="bg-shape shape-a"></div>
+    <div class="bg-shape shape-b"></div>
+    <div class="bg-shape shape-c"></div>
+    <div class="bg-shape shape-d"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">Portfolio</div>
+        <nav class="nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-left">
+            <h1 class="hero-title">Hi! I'm <span class="hero-name">Gitika</span></h1>
+            <p class="hero-lead">I design with empathy, research, and purpose — combining my AI background with thoughtful UI/UX to make experiences feel simple and meaningful.</p>
+
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#work">View my work</a>
+              <a class="btn btn-outline" href="#contact">Get in touch</a>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="character-oval">
+              <!-- replace with your illustration -->
+              <img src="Avatar.png" alt="Portfolio Image" onerror="this.style.opacity=0.85; this.src='assets/placeholder-face.png'" height="500px" width="500px">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About <span>Me</span></h2>
+
+          <div class="about-grid">
+            <div class="card about-card">
+              <h3>Education</h3>
+              <ul class="edu-list">
+                <li>
+                  <strong>Delhi Skills & Entrepreneurship University</strong>
+                  <div class="muted">Diploma in Artificial Intelligence & Machine Learning — 2023 &ndash; 2026 (Pursuing)</div>
+                </li>
+                <li>
+                  <strong>Govt. Girls Senior Secondary School</strong>
+                  <div class="muted">Senior Secondary Education (CBSE) — 2021 &ndash; 2023</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card about-card">
+              <h3>Skills</h3>
+              <div class="skill-section">
+                <strong>UX Skills</strong>
+                <div class="tags">
+                  <span class="tag">User Research</span>
+                  <span class="tag">Wireframing</span>
+                  <span class="tag">User Flows</span>
+                  <span class="tag">Information Architecture</span>
+                  <span class="tag">Prototyping</span>
+                </div>
+              </div>
+
+              <div class="skill-section">
+                <strong>UI Skills</strong>
+                <div class="tags">
+                  <span class="tag">Visual Design</span>
+                  <span class="tag">Design Systems</span>
+                  <span class="tag">Micro-interactions</span>
+                  <span class="tag">Responsive Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="tools-section">
+    <h2 class="tools-title">Tools</h2>
+
+    <div class="tools-container">
+
+        <div class="tool-card2">
+            <img src="figma.png" alt="Figma">
+            <p class="tool-name2">Figma</p>
+            <p class="tool-percent2">95%</p>
+        </div>
+
+        <div class="tool-card">
+            <img src="abode xd.png" alt="Adobe XD">
+            <p class="tool-name">Adobe XD</p>
+            <p class="tool-percent">92%</p>
+        </div>
+
+        <div class="tool-card">
+            <img src="Adobe_Illustrator.png" alt="Illustrator">
+            <p class="tool-name">Illustrator</p>
+            <p class="tool-percent">90%</p>
+        </div>
+
+        <div class="tool-card">
+            <img src="Adobe_Photoshop.png" alt="Photoshop">
+            <p class="tool-name">Photoshop</p>
+            <p class="tool-percent">89%</p>
+        </div>
+
+    </div>
+</section>
+
+      <!-- POSTERS (marquee required by you) -->
+      <section id="posters" class="posters">
+        <div class="container">
+          <h2 class="section-title">Posters</h2>
+
+          <!-- Using <marquee> as requested. To create an infinite-looking loop, items are duplicated. -->
+          <div class="marquee-wrapper">
+            <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+              <div class="marquee-track">
+                <!-- FIRST SET -->
+                <div class="poster"><img src="Poster 1.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 2.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 3.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 4.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 5.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 6.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 7.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 8.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 9.jpg" alt=""></div>
+
+                <!-- DUPLICATE SET (ensures continuous feel when original set ends) -->
+                <div class="poster"><img src="Poster 1.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 2.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 3.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 4.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 5.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 6.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 7.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 8.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 9.jpg" alt=""></div>
+
+                <div class="poster"><img src="Poster 1.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 2.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 3.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 4.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 5.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 6.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 7.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 8.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 9.jpg" alt=""></div>
+
+                <div class="poster"><img src="Poster 1.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 2.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 3.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 4.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 5.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 6.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 7.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 8.jpg" alt=""></div>
+                <div class="poster"><img src="Poster 9.jpg" alt=""></div>
+              </div>
+              </div>
+              </div>
+            </marquee>
+          </div>
+        </div>
+      </section>
+
+      <!-- CASE STUDIES -->
+      <section id="work" class="case-study">
+  <div class="container">
+    <h2 class="section-title">Case <span>Study</span></h2>
+
+    <div class="case-grid">
+
+      <!-- CARD 1 -->
+      <article class="case-card">
+        <a href="https://www.behance.net/gallery/236820207/IRCTC-Redesign-Simplifying-Ticket-Booking-in-India/modules/1361767525" target="_blank">
+          <div class="case-hero" style="background-image: url('3Project.png');">
+            <button class="case-cta">↗</button>
+          </div>
+
+          <div class="case-body">
+            <h3>IRCTC Redesign</h3>
+            <p class="muted">A redesigned IRCTC app for faster booking and clearer flows.</p>
+            <div class="case-tags">
+              <span class="case-tag">Web</span>
+              <span class="case-tag">UI</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="case-card">
+        <a href="https://www.behance.net/gallery/237098375/EdTech-Website/modules/1363644165" target="_blank">
+          <div class="case-hero" style="background-image: url('edtech.png');">
+            <button class="case-cta">↗</button>
+          </div>
+
+          <div class="case-body">
+            <h3>EdTech Website Design</h3>
+            <p class="muted">Modern learning experience with easy navigation and strong visuals.</p>
+            <div class="case-tags">
+              <span class="case-tag">Website</span>
+              <span class="case-tag">Education</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="case-card">
+        <a href="https://www.behance.net/gallery/237895333/Web-App-UIUX-Case-study/modules/1368690477" target="_blank">
+          <div class="case-hero" style="background-image: url('irctc.png');">
+            <button class="case-cta">↗</button>
+          </div>
+
+          <div class="case-body">
+            <h3>MailCleaner</h3>
+            <p class="muted">A calm, minimal app that helps organize inboxes efficiently.</p>
+            <div class="case-tags">
+              <span class="case-tag">Product</span>
+              <span class="case-tag">UX</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+      <!-- KIND WORDS -->
+      <section class="kind-words">
+        <div class="container">
+          <h2 class="section-title">Kind <span>Words</span></h2>
+
+          <div class="testimonials">
+            <blockquote class="testimonial">
+              <p>“Her attention to visual details has added significant value to our creative outputs.”</p>
+              <footer class="author">— Udayraj Patre, Founder &amp; Managing Director, Udayam AI Labs</footer>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <p>“She has consistently shown proactiveness, dedication, and a keen eye for quality design.”</p>
+              <footer class="author">— Sarthak Sathu, AI Engineer &amp; Instructor</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA / CONTACT -->
+      <section id="contact" class="cta">
+        <div class="container">
+          <div class="cta-card">
+            <h2 class = "section-title">Ready to <span>collaborate?</span></h2>
+            <p class="muted">I'm open to new opportunities in UI/UX and design. Let's build something beautiful and functional together.</p>
+
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=gitikas7065@gmail.com" target="_blank">
+  Email Me
+</a>
+
+              <a class="btn btn-outline" href="https://www.linkedin.com/in/gitika-singh-b301382b0" target="_blank" rel="noopener">Connect on LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Gitika Portfolio.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
