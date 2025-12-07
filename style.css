@@ -1,0 +1,309 @@
+:root{
+  --bg:#0b0c09;
+  --muted:#aab7a6;
+  --accent:#7a9a7a;
+  --card: rgba(255,255,255,0.03);
+  --glass: rgba(255,255,255,0.04);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Inter", system-ui, Arial, sans-serif;
+  background:var(--bg);
+  color:#fff;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* container width */
+.container{
+  width:88%;
+  max-width:1180px;
+  margin:0 auto;
+}
+
+/* decorative organic shapes */
+.bg-shape{
+  position:fixed;
+  background:var(--accent);
+  border-radius:48%;
+  opacity: 0.12;
+  z-index:0;
+  pointer-events:none;
+  transform: rotate(8deg);
+}
+.shape-a{width:420px;height:420px;left:-160px;top:-120px}
+.shape-b{width:360px;height:360px;right:-140px;top:60px}
+.shape-c{width:280px;height:280px;left:-120px;bottom:220px}
+.shape-d{width:420px;height:420px;right:-140px;bottom:-80px}
+
+/* header */
+.site-header{
+  position:relative;
+  z-index:10;
+  padding:20px 0;
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:15px;opacity:0.95}
+.nav a{color:#fff;text-decoration:none;margin-left:26px;font-size:14px;opacity:0.9}
+.nav a:hover{color:var(--accent)}
+
+/* HERO */
+.hero{padding:60px 0 40px}
+.hero-inner{display:flex;gap:30px;align-items:center}
+.hero-left{flex:1;max-width:720px}
+.hero-right{flex:0 0 420px;display:flex;justify-content:center}
+
+.hero-title{
+  font-family:'Bebas Neue', sans-serif;
+  font-size:100px;
+  line-height:0.9;
+  margin:14px 14px 30px 0;
+  letter-spacing:1px;
+  color:#fff;
+}
+.hero-name{font-family:'Irish Grover'; color : var(--accent);display:inline-block;margin-left:6px}
+
+.hero-lead{
+  font-size:20px;
+  color:var(--muted);
+  max-width:680px;
+  margin-bottom:30px;
+}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  padding:11px 20px;
+  border-radius:10px;
+  font-weight:600;
+  font-size:15px;
+  transition: all .18s ease;
+}
+.btn-primary{background:var(--accent);color:#071007;border:2px solid var(--accent)}
+.btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.12)}
+.btn:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.45)}
+
+/* hero illustration oval */
+.character-oval{
+  width:400px;height:400px;border-radius:50%;
+  background:linear-gradient(180deg,#7f9f7f 0%, #7a9a7a 100%);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  border: 6px solid rgba(0,0,0,0.35);
+}
+.character-oval img{width:100%;height:auto;border-radius:14px;object-fit:cover}
+
+/* SECTION title */
+.section-title{
+  font-family:'Bebas Neue';
+  font-size:64px;
+  margin:14px 0 28px;
+  letter-spacing:0.6px;
+}
+.section-title span{font-family:'Irish Grover';color:var(--accent)}
+
+/* ABOUT */
+.about{padding:60px 0 30px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:var(--card);border:1px solid rgba(255,255,255,0.04);padding:26px;border-radius:12px}
+.about-card h3{margin:0 0 14px;color:var(--accent)}
+.edu-list li{margin-bottom:18px;font-size:14px;color:#e9efe7}
+.muted{color:var(--muted);font-size:13px;margin-top:6px}
+
+/* tags / skills */
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.tag{background:rgba(255,255,255,0.03);padding:7px 12px;border-radius:999px;font-size:13px}
+
+/* tools */
+.tools-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.tools-title {
+    font-size: 48px;
+    font-family: 'Pacifico', cursive;
+    color: #8AA26A;
+    margin-bottom: 40px;
+}
+
+.tools-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.tool-card {
+    width: 150px;
+    height: 220px;
+    background-color: #708657;
+    border-radius: 80px;
+    padding-top: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.tool-card:hover {
+    transform: scale(1.08);
+    background-color: #7f9d62;
+}
+
+.tool-card img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 10px;
+}
+
+.tool-name {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.tools-section2 {
+    text-align: center;
+    padding:10px;
+}
+
+.tools-title2 {
+    font-size: 48px;
+    font-family: 'Pacifico', cursive;
+    color: #8AA26A;
+    margin-bottom: 10px;
+}
+
+.tools-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tool-card2 {
+    width: 150px;
+    height: 220px;
+    background-color: #708657;
+    border-radius: 80px;
+    padding-top: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.tool-card2:hover {
+    transform: scale(1.08);
+    background-color: #7f9d62;
+}
+
+.tool-card2 img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1px;
+}
+
+.tool-name2 {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* POSTERS */
+.posters{padding:36px 0 30px}
+.marquee-wrapper{background: rgba(122,154,122,0.05); padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.marquee-track{display:flex;align-items:center;gap:18px}
+.poster{flex:0 0 150px;height:220px;border-radius:10px;overflow:hidden;box-shadow: 0 8px 30px rgba(0,0,0,0.6)}
+.poster img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* CASE STUDIES */
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.case-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Your existing styles can stay */
+.case-card {
+  background: var(--glass);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.case-hero {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.case-cta {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 44px;
+  height: 44px;
+  background: var(--accent);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.case-body {
+  padding: 18px;
+}
+
+.case-tags {
+  display: flex;
+  gap: 8px;
+}
+
+.case-tag {
+  font-size: 13px;
+}
+
+/* testimonials */
+.kind-words{padding:46px 0}
+.testimonials{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.testimonial{background:linear-gradient(180deg, rgba(122,154,122,0.08), rgba(255,255,255,0.02));border:1px solid rgba(122,154,122,0.12);padding:22px;border-radius:12px}
+.testimonial p{font-style:italic;color:#eaf1ea;margin-bottom:10px}
+.author{color:var(--accent);font-size:13px}
+
+/* CTA */
+.cta{padding:56px 0 80px}
+.cta-card{max-width:760px;margin:0 auto;background:var(--card);border-radius:14px;padding:36px;border:1px solid rgba(255,255,255,0.04);text-align:center}
+.cta-card h2{font-family:'Bebas Neue';font-size:44px;margin:0 0 8px}
+.cta-card span{color:var(--accent)}
+.cta-card .muted{color:var(--muted);max-width:640px;margin:10px auto 16px}
+
+/* footer */
+.site-footer{padding:28px 0 56px;color:rgba(255,255,255,0.36);text-align:center}
+
+/* small screens */
+@media (max-width: 980px){
+  .hero-inner{flex-direction:column-reverse;gap:22px}
+  .hero-right{order:-1}
+  .hero-title{font-size:64px}
+  .about-grid{grid-template-columns:1fr}
+  .case-grid{grid-template-columns:1fr}
+  .testimonials{grid-template-columns:1fr}
+  .tools-grid{flex-wrap:wrap}
+  .container{width:92%}
+}
+
+/* mobile */
+@media (max-width:600px){
+  .hero-title{font-size:48px}
+  .character-oval{width:240px;height:240px}
+  .poster{flex:0 0 120px;height:180px}
+  .section-title{font-size:48px}
+}
